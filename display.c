@@ -147,7 +147,7 @@ void dd_destroy() {
     ilclient_destroy(dd_client);
 }
 
-int dd_display(unsigned char *buffer, uint len) {
+int dd_play_video(unsigned char *buffer, uint len) {
     OMX_BUFFERHEADERTYPE *buf;
     int first_packet = 1;
 

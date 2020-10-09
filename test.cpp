@@ -25,7 +25,7 @@ int main (int argc, char **argv) {
         fread(buffer, fileLen, 1, in);
         fclose(in);
 
-        if (dd_display(buffer, fileLen) != 0) {
+        if (dd_play_video(buffer, fileLen) != 0) {
             printf("Error during display!\n");
         }
 
