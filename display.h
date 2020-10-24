@@ -10,7 +10,7 @@ void dd_destroy();
 
 /*
  * build compatible video:
- * ffmpeg -r 60 -s 800x480 -i f%d.jpg -vcodec libx264 -crf 25 -pix_fmt yuv420p -acodec aac output.h264
+ * ffmpeg -r 60 -s 800x480 -i f%d.bmp -vcodec libx264 -crf 12 -pix_fmt yuv420p -acodec aac output.h264
  */
 int dd_play_video(unsigned char *buffer, unsigned int len);
 
